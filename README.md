@@ -10,3 +10,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Barra de navegación terminada v1 (navbar responsive, offcanvas). 
   Probé dividir la barra en diferentes componentes (Logo - Enlances - Botón de login) pero tuve dificultades para poder alinearlos en el contenedor. Finalmente resolví que la barra de navegación sea un solo componente.
 - Commit y push.
+
+02 de julio 2022
+- Banner terminado e incorporado al header junto con la barra de navegación. Diseño de imagen del banner. 
