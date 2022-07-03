@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarTogglerComponent } from './components/header/navbar-toggler/navbar-toggler.component';
 import { NavbarOffcanvasComponent } from './components/header/navbar-offcanvas/navbar-offcanvas.component';
+import { BannerComponent } from './components/header/banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarTogglerComponent,
-    NavbarOffcanvasComponent
+    NavbarOffcanvasComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
