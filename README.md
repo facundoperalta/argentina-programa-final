@@ -12,4 +12,7 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Commit y push.
 
 02 de julio 2022
-- Banner terminado e incorporado al header junto con la barra de navegación. Diseño de imagen del banner. 
+- Banner terminado e incorporado al header junto con la barra de navegación. Diseño de imagen del banner.
+
+03 de julio 2022
+- Sección "acerca de mi" creada en un componente independiente. Sección finalizada con diseño provisorio. Después de intentar con el sistema de grid responsive de bootstrap, probé con el contenedor "card" y opté por este último. 
