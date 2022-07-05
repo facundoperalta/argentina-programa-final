@@ -8,6 +8,7 @@ import { NavbarTogglerComponent } from './components/header/navbar-toggler/navba
 import { NavbarOffcanvasComponent } from './components/header/navbar-offcanvas/navbar-offcanvas.component';
 import { BannerComponent } from './components/header/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutComponent } from './components/about/about.component';
     NavbarTogglerComponent,
     NavbarOffcanvasComponent,
     BannerComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
