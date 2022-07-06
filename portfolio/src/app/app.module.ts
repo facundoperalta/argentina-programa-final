@@ -9,6 +9,7 @@ import { NavbarOffcanvasComponent } from './components/header/navbar-offcanvas/n
 import { BannerComponent } from './components/header/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     NavbarOffcanvasComponent,
     BannerComponent,
     AboutComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
