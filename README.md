@@ -16,3 +16,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 
 03 de julio 2022
 - Sección "acerca de mi" creada en un componente independiente. Sección finalizada con diseño provisorio. Después de intentar con el sistema de grid responsive de bootstrap, probé con el contenedor "card" y opté por este último. 
+
+05 de julio 2022
+- Sección "experiencia laboral" creada en un componente independiente. Sección finalizada con diseño provisorio. Mi idea es hacer una tabla que en la primera columna figuren el puesto de la experiencia laboral, y que al hacer click cargue la información en una segunda columna más ancha, si tengo tiempo lo voy a intentar hacer. 
