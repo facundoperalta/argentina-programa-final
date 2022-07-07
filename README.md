@@ -22,4 +22,7 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Sección "educación" creada en un componente independiente. Utilicé los estilos de listas predefinidos de bootstrap 5, tengo problemas para ubicar los logos. Creo que voy a rediseñar la sección de "experiencia laboral" en base a la de "educación".
 
 06 de julio 2022
-- Sección "habilidades duras y blandas" creada en un componente independiente. Sección finalizada con diseño el diseño de las barras de progreso de bootstrap 5.
+- Sección "habilidades duras y blandas" creada en un componente independiente. Sección finalizada con el diseño de las barras de progreso de bootstrap 5.
+
+07 de julio 2022
+- Sección de "proyectos" creada en un componente independiente. La sección implementa las tarjetas (cards) de bootstrap 5.  
