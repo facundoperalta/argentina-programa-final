@@ -25,4 +25,9 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Sección "habilidades duras y blandas" creada en un componente independiente. Sección finalizada con el diseño de las barras de progreso de bootstrap 5.
 
 07 de julio 2022
-- Sección de "proyectos" creada en un componente independiente. La sección implementa las tarjetas (cards) de bootstrap 5.  
+- Sección de "proyectos" creada en un componente independiente. La sección implementa las tarjetas (cards) de bootstrap 5.
+
+10 de julio 2022
+- Enlace para la sección "proyectos" agregado a la barra de navegación. Todos los enlaces funcionan.
+- Rediseño de las secciones "acerca de mi", "experiencia laboral", "educación" y "proyectos". Algunos cambios en la redacción de los contenidos.
+- Desarrollo de Front End Dinámico terminado, solo falta cambiar la foto de perfil.
