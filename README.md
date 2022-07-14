@@ -31,3 +31,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Enlace para la sección "proyectos" agregado a la barra de navegación. Todos los enlaces funcionan.
 - Rediseño de las secciones "acerca de mi", "experiencia laboral", "educación" y "proyectos". Algunos cambios en la redacción de los contenidos.
 - Desarrollo de Front End Dinámico terminado, solo falta cambiar la foto de perfil.
+
+11 de julio 2022
+- Creación del "footer".
