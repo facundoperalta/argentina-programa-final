@@ -34,3 +34,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 
 11 de julio 2022
 - Creación del "footer".
+
+23 de julio 2022
+- Confección Diagrama Entidad Relación, Esquema lógico de la base de datos, UML del portfolio.
