@@ -13,6 +13,9 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { PersonComponent } from './models/person/person.component';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { FooterComponent } from './components/footer/footer.component';
     EducationComponent,
     SkillsComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
