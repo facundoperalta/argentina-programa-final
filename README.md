@@ -39,4 +39,7 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 - Confección Diagrama Entidad Relación, Esquema lógico de la base de datos, UML del portfolio.
 
 07 de agosto 2022
-- Creación repositorio backend y base de datos vacía con MySQL Workbench. Comienzo del CRUD con SpringBoot (paquetes para persona, educación, experiencia, habilidades duras y blandas, proyectos; cada una con sus respectivas capas: model, repository, service, controller).
+- Creación repositorio para el backend en github y base de datos vacía con MySQL Workbench. Comienzo de la API REST con SpringBoot (paquetes para persona, educación, experiencia, habilidades duras y blandas, proyectos; cada una con sus respectivas capas: model, repository, service, controller).
+
+09 de agosto 2022
+- API REST terminada, primera versión de prueba. Comienzo vinculación backend con frontend en angular.
