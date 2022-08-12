@@ -43,3 +43,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 
 09 de agosto 2022
 - API REST terminada, primera versión de prueba. Comienzo vinculación backend con frontend en angular.
+
+11 de agosto 2022
+- Avance en vinculación front-end y back-end (clase person).
