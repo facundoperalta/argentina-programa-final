@@ -1,4 +1,7 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Person } from 'src/app/models/person';
+import { PersonService } from 'src/app/services/person.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  public person: Person | undefined;
+  /*public editPerson: Person | undefined;*/
+
+  constructor(private personService : PersonService ) { }
 
   ngOnInit(): void {
+    this.getPerson();
+  }
+
+  public getPerson():void{
+    this.personService.getPerson().subscribe(response => {this.person=response})
   }
 
 }

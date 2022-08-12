@@ -13,8 +13,9 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClient, HttpClientModule} from '@angular/common/http';
-import { PersonComponent } from './models/person/person.component';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -29,13 +30,13 @@ import { PersonComponent } from './models/person/person.component';
     EducationComponent,
     SkillsComponent,
     ProjectComponent,
-    FooterComponent,
-    PersonComponent
+    FooterComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,8 +11,8 @@
                         <img src="../../../assets/profile.jpg" class="img-fluid border border-white border-3 rounded-circle mt-3 mx-0" alt="imagén de perfil">
                     </div>
                     <div class="col-lg-10">
-                        <div class="card-body bg-primary text-white">
-                            <h3 class="card-title">Patricio Facundo Peralta Zagarra</h3>
+                        <div class="card-body bg-primary text-white" *ngIf="person">
+                            <h3 class="card-title">{{person.firstName}} {{person.lastName}}</h3>
                             <h4 class="card-subtitle mb-2">Full Stack Developer Junior</h4>                 
                             <p class="card-text fs-5">¡Hola! Mi nombre es Facundo. Soy <i>Traductor Público de Inglés</i> y <i>Profesor Universitario de Lengua y Cultura Inglesa</i>. En el año 2021 incursioné en el mundo de la programación a través del plan <b>Argentina Programa</b>. En la primera etapa de capacitación <b>#SeProgramar</b> adquirí fundamentos básicos de programación, principios de la programación orientada a objetos en Ruby y nociones de programación imperativa y estructura de datos en JavaScript.</p>
                             <p class="card-text fs-5">Actualmente, me encuentro cursando la segunda etapa <b>#YoProgramo</b> en donde enseñan las habilidades y herramientas necesarias para ser un <i>Programador Web Full-Stack Junior</i>.</p>
@@ -22,8 +22,9 @@
             </div>
         </div>
     </div>
-  </div>    
-</section>
+  </div>  
+  
+ </section>
 
 <!--
     <div class="container mt-3">
