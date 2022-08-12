@@ -46,3 +46,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 
 11 de agosto 2022
 - Avance en vinculación front-end y back-end (clase person).
+
+12 de agosto 2022
+- Prueba de métodos crud con postman (todas las clases), llenado de la base de datos con método put en postman.
