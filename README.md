@@ -52,3 +52,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
 
 13 de agosto 2022
 - Vinculación front-end y backend completa. Queda modificar algunos aspectos del diseño front-end, como agregar botones de edición.
+
+14 de agosto 2022
+ - Creación de paquete DTO y sus respectivas clases. Modificación de clases controllers. 
