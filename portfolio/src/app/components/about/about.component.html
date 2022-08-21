@@ -1,14 +1,43 @@
-<section id="acerca">
+<section id="acerca" *ngIf="person">
   <div class="container pt-3 mb-5">
     <div class="row">
         <div class="col-12 pt-5 mt-5">
-            <div class="card border-primary">
+
+            <div class="card border-secondary text-secondary">
+                <div class="card-header">
+                    <h2 class="text-center">Acerca de mi
+                        <button class="btn btn-outline-secondary btn-sm ms-5" routerLink="/edit/user/{{person.id}}"><i class="bi bi-pencil"></i>Editar</button>
+                    </h2>
+                      
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2 text-center mb-2">
+                        <img src="{{person.profileImage}}" class="img-fluid border border-white border-3 rounded-circle mt-3 mx-0 mb-2" alt="imagen de perfil">
+                        <br><b>Lugar de residencia</b><br><i>{{person.place}}</i>
+                        <br><b>Fecha de nacimiento</b><br><i>{{person.birthDate | date}}</i>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h3 class="card-title">{{person.firstName}} {{person.lastName}}</h3>
+                            <h4 class="card-subtitle mb-2"><i>{{person.occupation}}</i></h4>               
+                            <p class="card-text fs-5">{{person.about}}</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+
+
+
+            <!--<div class="card border-primary">
                 <div class="card-header">
                     <h2 class="text-center text-primary">Acerca de mi</h2>
                 </div>
                 <div class="row g-0">
                     <div class="col-lg-2 text-center bg-primary">
-                        <img src="../../../assets/profile.jpg" class="img-fluid border border-white border-3 rounded-circle mt-3 mx-0" alt="imagén de perfil">
+                        <img src="../../../assets/profile.png" class="img-fluid border border-white border-3 rounded-circle mt-3 mx-0" alt="imagén de perfil">
                     </div>
                     <div class="col-lg-10">
                         <div class="card-body bg-primary text-white" *ngIf="person">
@@ -19,7 +48,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
+
         </div>
     </div>
   </div>  

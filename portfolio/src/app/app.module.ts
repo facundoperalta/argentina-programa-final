@@ -16,6 +16,22 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { CreateEducationComponent } from './components/crud/create-education/create-education.component';
+import { EditEducationComponent } from './components/crud/edit-education/edit-education.component';
+import { CreateExperienceComponent } from './components/crud/create-experience/create-experience.component';
+import { CreateSkillComponent } from './components/crud/create-skill/create-skill.component';
+import { CreateProjectComponent } from './components/crud/create-project/create-project.component';
+import { EditExperienceComponent } from './components/crud/edit-experience/edit-experience.component';
+import { EditProjectComponent } from './components/crud/edit-project/edit-project.component';
+import { EditSkillComponent } from './components/crud/edit-skill/edit-skill.component';
+import { EditUserComponent } from './components/crud/edit-user/edit-user.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { EditHskillComponent } from './components/crud/edit-hskill/edit-hskill.component';
+import { CreateHskillComponent } from './components/crud/create-hskill/create-hskill.component';
+
+
 
 
 @NgModule({
@@ -30,13 +46,27 @@ import { FormsModule } from '@angular/forms';
     EducationComponent,
     SkillsComponent,
     ProjectComponent,
-    FooterComponent, 
+    FooterComponent,
+    CreateEducationComponent,
+    EditEducationComponent,
+    CreateExperienceComponent,
+    CreateSkillComponent,
+    CreateProjectComponent,
+    EditExperienceComponent,
+    EditProjectComponent,
+    EditSkillComponent,
+    EditUserComponent,
+    PortfolioComponent,
+    EditHskillComponent,
+    CreateHskillComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

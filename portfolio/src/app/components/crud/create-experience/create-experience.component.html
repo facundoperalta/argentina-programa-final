@@ -1,0 +1,49 @@
+<div class="container">
+    <h2 class="text-center mt-5">Nueva Experiencia</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group mt-2">
+                    <label for="job">Trabajo que desempeñó</label>
+                    <input type="text" class="form-control" id="job" name="job"
+                    [(ngModel)]="job" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="institution">Institución para la que trabajó</label>
+                    <input type="text" class="form-control" id="institution" name="institution"
+                    [(ngModel)]="institution" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="description">Descripción del trabajo realizado</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                    [(ngModel)]="description" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="started">Año de inicio</label>
+                    <input type="number" class="form-control" id="started" name="started" 
+                    [(ngModel)]="started" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="finished">Año de finalización</label>
+                    <input type="number" class="form-control" id="finished" name="finished"
+                    [(ngModel)]="finished" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="logoExp">Logo de la Institución</label>
+                    <input type="text" class="form-control" id="logoExp" name="logoExp" placeholder="ingrese enlace del logo"
+                    [(ngModel)]="logoExp" required>
+                </div>
+                <div class="mt-2"> 
+                    <label for="continues">¿Es trabajo actual?</label>
+                    <select id="continues" class="form-select" name="continues" [(ngModel)]="continues" required>
+                    <option [ngValue]=true>Si</option>
+                    <option [ngValue]=false>No</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-outline-success btn-sm m-1" [disabled]="!f.valid">Confirmar</button>
+            </form>
+            <button type="button" class="btn btn-outline-secondary btn-sm m-1" routerLink="/">Volver</button>
+        </div>
+    </div>
+</div>

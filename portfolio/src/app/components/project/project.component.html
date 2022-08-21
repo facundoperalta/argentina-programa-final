@@ -1,9 +1,32 @@
 <section id="proyectos">
     <div class="container mt-5 pt-5 mb-3">
-        <h2 class="text-center text-muted mt-5">Proyectos</h2>      
-        <div class="row d-flex justify-content-center">
+        <h2 class="text-center text-muted mt-5">Proyectos
+          <button class="btn btn-outline-secondary btn-sm ms-5" routerLink="/new/project"><i class="bi bi-plus-circle"></i> Añadir</button>
+        </h2>      
+        <div *ngFor="let project of projects" class="row">
+            <div class="row row-cols-1 row-cols-lg-3 g-4 d-flex justify-content-center">
+              <div class="col">
+                <div class="card border-secondary h-100">
+                  <img src="{{project.projectImage}}" class="card-img-top" style="width:100%" alt="imagen proyecto">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">{{project.project}}</h5>
+                    <p class="card-text">{{project.description}}</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <h5>
+                      <a class="link-secondary" href="{{project.address}}">{{project.address}}</a> <br>
+                    </h5>
+                    <button class="btn btn-outline-dark btn-sm" routerLink="/edit/project/{{project.id}}"><i class="bi bi-pencil"></i>Editar</button>
+                    <button class="btn btn-outline-danger btn-sm ms-2" (click)="delete(project.id)"><i class="bi bi-trash3"></i> Eliminar</button>
+                  </div>
+                </div>
+              </div>             
+              </div>
+        </div>
+    </div>
+</section>
 
-            <div class="row row-cols-1 row-cols-lg-3 g-4">
+              <!-- 
                 <div class="col">
                   <div class="card border-secondary h-100">
                     <img src="../../../assets/imagen-proyecto1.png" class="card-img-top" style="width:100%" alt="imagen proyecto">
@@ -40,8 +63,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+ -->
 
+
+ 
             <!--
             <div class="col-lg-5" mt-5>
                 <div class="card mt-3" style="width: 25rem;">
@@ -67,6 +92,3 @@
                     </div>
                 </div>
             </div>-->
-        </div>
-    </div>
-</section>

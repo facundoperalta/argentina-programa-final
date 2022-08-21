@@ -1,0 +1,33 @@
+<div class="container">
+    <h2 class="text-center mt-5">Nuevo Habilidad Blanda</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+                <div class="mt-2"> 
+                    <label for="hardSkill">Tipo de Habilidad</label>
+                    <select id="hardSkill" class="form-select" name="hardSkill" [(ngModel)]="hardSkill" required>
+                      <option value='Frameworks y Lenguajes de Programación Front End'>Frameworks y Lenguajes de Programación Front End</option>
+                      <option value='Frameworks y Tecnologías Back End'>Frameworks y Tecnologías Back End</option>
+                      <option value='Sistemas Gestores de Bases de Datos'>'Sistemas Gestores de Bases de Datos'</option>
+                      <option value='Sistemas de Control de Versiones'>Sistemas de Control de Versiones</option>
+                    </select>
+                  </div>
+
+                <div class="form-group mt-2">
+                    <label for="technology">Nombre de la Tecnología</label>
+                    <input type="text" class="form-control" id="technology" name="technology"
+                    [(ngModel)]="technology" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="mastery">Nivel de conocimiento</label>
+                    <input type="number" class="form-control" id="mastery" name="mastery"
+                    [(ngModel)]="mastery" required>
+                </div>
+                <button class="btn btn-outline-success btn-sm m-1" [disabled]="!f.valid">Confirmar</button>
+            </form>
+            <button type="button" class="btn btn-outline-secondary btn-sm m-1"
+            routerLink="/">Volver</button>
+        </div>
+    </div>
+</div>

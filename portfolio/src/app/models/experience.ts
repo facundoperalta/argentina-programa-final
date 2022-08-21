@@ -6,7 +6,7 @@ export class Experience {
     started: number;
     finished: number;
     logoExp: String;
-    continues: Boolean;
+    continues: boolean;
     
     
     constructor(job: String, institution: String, description: String, started: number, finished: number, logoExp: String, continues: boolean) {

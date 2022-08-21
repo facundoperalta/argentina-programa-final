@@ -2,7 +2,7 @@ export class Person {
     id?: number;
     firstName: String;
     lastName: String;
-    birthDate: Date;
+    birthDate: Date | any;
     place: String;
     occupation: String;
     profileImage: String;

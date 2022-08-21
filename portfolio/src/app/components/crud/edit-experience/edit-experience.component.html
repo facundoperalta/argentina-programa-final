@@ -1,0 +1,50 @@
+<div class="container">
+    <h2 class="text-center mt-5">Editar Experiencia</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group mt-2">
+                    <label for="job">Trabajo que desempeñó</label>
+                    <input type="text" class="form-control" id="job" name="job"
+                    [(ngModel)]="experience.job" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="institution">Institución para la que trabajó</label>
+                    <input type="text" class="form-control" id="institution" name="institution"
+                    [(ngModel)]="experience.institution" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="description">Descripción del trabajo realizado</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                    [(ngModel)]="experience.description" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="started">Año de inicio</label>
+                    <input type="number" class="form-control" id="started" name="started" 
+                    [(ngModel)]="experience.started" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="finished">Año de finalización</label>
+                    <input type="number" class="form-control" id="finished" name="finished"
+                    [(ngModel)]="experience.finished" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="logoExp">Logo de la Institución</label>
+                    <input type="text" class="form-control" id="logoExp" name="logoExp" placeholder="ingrese enlace del logo"
+                    [(ngModel)]="experience.logoExp" required>
+                </div>
+
+                <div class="mt-2"> 
+                    <label for="continues">¿Es trabajo actual?</label>
+                    <select id="continues" class="form-select" name="continues" [(ngModel)]="experience.continues" required>
+                    <option [ngValue]=true>Si</option>
+                    <option [ngValue]=false>No</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-outline-success btn-sm m-1" [disabled]="!f.valid">Actualizar</button>
+            </form>
+            <button type="button" class="btn btn-outline-secondary btn-sm m-1" routerLink="/">Volver</button>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,3 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Person } from 'src/app/models/person';
 import { PersonService } from 'src/app/services/person.service';
@@ -20,7 +19,7 @@ export class AboutComponent implements OnInit {
   }
 
   public getPerson():void{
-    this.personService.getPerson().subscribe(response => {this.person=response})
+    this.personService.getPerson(1).subscribe(data => {this.person=data})
   }
 
 }

@@ -1,0 +1,33 @@
+<div class="container">
+    <h2 class="text-center mt-5">Nuevo Proyecto</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+                <div class="form-group mt-2">
+                    <label for="project">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="project" name="project"
+                    [(ngModel)]="project" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="description">Descripción del proyecto</label>
+                    <input type="text" class="form-control" id="description" name="description"
+                    [(ngModel)]="description" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="address">Enlace del proyecto</label>
+                    <input type="text" class="form-control" id="address" name="address"
+                    [(ngModel)]="address" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="projectImage">Imagen del proyecto</label>
+                    <input type="text" class="form-control" id="projectImage" name="projectImage" placeholder="ingrese enlace de la imagen"
+                    [(ngModel)]="projectImage" required>
+                </div>
+                <button class="btn btn-outline-success btn-sm m-1" [disabled]="!f.valid">Confirmar</button>
+            </form>
+            <button type="button" class="btn btn-outline-secondary btn-sm m-1"
+            routerLink="/">Volver</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="container" *ngIf="education">
+    <h2 class="text-center mt-5">Editar Educación</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group mt-2">
+                    <label for="degree">Carrera</label>
+                    <input type="text" class="form-control" id="degree" name="degree"
+                    [(ngModel)]="education.degree" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="year">Año de Egreso</label>
+                    <input type="number" class="form-control" id="year" name="year"
+                    [(ngModel)]="education.year" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="institution">Institución</label>
+                    <input type="text" class="form-control" id="institution" name="institution"
+                    [(ngModel)]="education.institution" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="logoEdu">Logo de la Institución</label>
+                    <input type="text" class="form-control" id="logoEdu" name="logoEdu" placeholder="ingrese enlace del logo"
+                    [(ngModel)]="education.logoEdu" required>
+                </div>
+                <div class="mt-2"> 
+                    <label for="finished">¿Educación finalizada?</label>
+                    <select id="finished" class="form-select" name="finished" [(ngModel)]="education.finished" required>
+                    <option [ngValue]=true>Si</option>
+                    <option [ngValue]=false>No</option>
+                  </select>
+                </div>
+
+
+                
+                <!--
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="finished" id="finished1" value='true' checked
+                    [(ngModel)]="finished">
+                    <label class="form-check-label" for="finished1">
+                      Finalizó
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="finished" id="finished2" value='false'
+                    [(ngModel)]="finished">
+                    <label class="form-check-label" for="finished2">
+                      En curso
+                    </label>
+                </div>
+                -->
+                <button class="btn btn-outline-success btn-sm m-1" [disabled]="!f.valid">Actualizar</button>
+            </form>
+            <button type="button" class="btn btn-outline-secondary btn-sm m-1" routerLink="/">Volver</button>
+        </div>
+    </div>
+</div>

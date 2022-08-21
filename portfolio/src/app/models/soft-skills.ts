@@ -1,8 +1,7 @@
 export class SoftSkills {
     id?: number;
     softSkill: String;
-    mastery: number;
-    
+    mastery: number;   
     
     constructor(softSkill: String, mastery: number) {
         this.softSkill = softSkill;

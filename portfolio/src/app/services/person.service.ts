@@ -11,14 +11,19 @@ export class PersonService {
 
   constructor(private http: HttpClient) { }
 
+  public getPerson(id: number): Observable<Person>{
+    return this.http.get<Person>(`${this.URL}get/${id}`);
+  }
+
+  public editPerson(id: number, person: Person):Observable<Person>{
+    return this.http.put<Person>(`${this.URL}edit/${id}`, person);
+  }
+
+}
+
+
+/* versión funciona
   public getPerson(): Observable<Person>{
     return this.http.get<Person>(`${this.URL}get/1`);
   }
-
-  /*
-  public editPerson(person: Person):Observable<Person>{
-    return this.http.put<Person>(`${this.URL}edit/1`);
-  }
-*/
-
-}
+  */
