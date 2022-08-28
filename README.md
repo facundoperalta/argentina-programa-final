@@ -58,3 +58,7 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
  
  21 de agosto 2022
  - Todos los componentes en angular vinculados con la base de datos. CRUD funcionanado.
+ 
+ 22 al 27 de agosto
+ - Login JWT. Siguiendo un video tutorial del canal Luigi Code. El login quedó con dos roles, un usuario con rol de usuario para poder visualizar el contenido del portfolio; y un segundo rol de administrador que es quien puede editar el portfolio. Están el código para crear un nuevo usuario pero no está implementado en el frontend.
+ - Correción y limpieza del código. La aplicación funciona de manera local. Todo listo para comenzar el deploy.
