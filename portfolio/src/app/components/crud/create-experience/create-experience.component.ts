@@ -31,7 +31,7 @@ export class CreateExperienceComponent implements OnInit {
         this.toastr.success('Experiencia creada', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/portfolio'])
       },
       err => {
         this.toastr.error(err.error.mensaje, 'Error', {

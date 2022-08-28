@@ -26,7 +26,7 @@ export class CreateSkillComponent implements OnInit {
         this.toastr.success('Habilidad creada', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/portfolio'])
       }, err => {
         this.toastr.error('Error', 'Fail', {
           timeOut: 3000,  positionClass: 'toast-top-center',

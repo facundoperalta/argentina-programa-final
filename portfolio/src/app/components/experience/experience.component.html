@@ -1,10 +1,10 @@
 <section id="experiencia">
     <div class="container mt-2 pt-3">
         <h2 class="mt-5 mb-3 pt-5 text-center text-muted">Experiencia laboral
-            <button type="button" class="btn btn-outline-secondary btn-sm ms-5" routerLink="/new/experience"><i class="bi bi-plus-circle"></i> Añadir</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm ms-5" routerLink="/new/experience" *ngIf="isAdmin"><i class="bi bi-plus-circle"></i> Añadir</button>
         </h2>
 
-        <!-- Modal -->
+        <!-- Modal 
         <div class="modal fade" id="addExperience" tabindex="-1" aria-labelledby="addExperience" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div *ngFor="let experience of experiences;">
             <div class="row">
@@ -39,18 +39,18 @@
                     <ng-template #elseBlock>{{experience.finished}}</ng-template>
                     <p class="fs-5 text-center">{{experience.description}}</p>
                     <div class="d-flex justify-content-center mb-2">
-                        <button type="button" class="btn btn-outline-dark btn-sm" routerLink="/edit/experience/{{experience.id}}"><i class="bi bi-pencil"></i>Editar</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm" routerLink="/edit/experience/{{experience.id}}"*ngIf="isAdmin"><i class="bi bi-pencil"></i>Editar</button>
                         <button type="button" class="btn btn-outline-danger btn-sm ms-2"
-                            (click)="delete(experience.id)"><i class="bi bi-trash3"></i> Eliminar</button>
+                            (click)="delete(experience.id)" *ngIf="isAdmin"><i class="bi bi-trash3"></i> Eliminar</button>
                     </div>
 
-                    <!-- Modal Editar-->
+                    <!-- Modal Editar
                     <div class="modal fade" id="editExperience" tabindex="-1" aria-labelledby="editExperience"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="editExperience">Editar Experiencia</h5>
+                                    <h5 class="modal-title" id="editExperience" *ngIf="isAdmin">Editar Experiencia</h5>
                                 </div>
                                 <div class="modal-body">
                                     ...
@@ -63,6 +63,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                 </div>
             </div>

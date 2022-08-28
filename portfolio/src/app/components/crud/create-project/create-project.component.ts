@@ -28,7 +28,7 @@ export class CreateProjectComponent implements OnInit {
         this.toastr.success('Proyecto creado', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/portfolio'])
       }, err => {
         this.toastr.error('Error', 'Fail', {
           timeOut: 3000,  positionClass: 'toast-top-center',

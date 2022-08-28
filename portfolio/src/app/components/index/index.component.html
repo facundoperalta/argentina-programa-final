@@ -1,0 +1,11 @@
+<app-navbar-offcanvas></app-navbar-offcanvas>
+<div class="container text-center">
+    <div *ngIf="isLogged; else loggedOut">
+        <h4>Ya has iniciado sesión</h4>
+        <a class="btn btn-outline-success m-2" routerLink="/portfolio" role="button">Entrar <i class="bi bi-door-open"></i></a>
+    </div>
+    <ng-template #loggedOut>
+        <h4>Hacé click en el botón de <span class="text-success">Log in</span> en la esquina superior derecha para iniciar sesión</h4>
+    </ng-template>
+</div>
+<app-banner></app-banner>

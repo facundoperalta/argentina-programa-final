@@ -14,7 +14,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
@@ -30,6 +30,10 @@ import { EditUserComponent } from './components/crud/edit-user/edit-user.compone
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EditHskillComponent } from './components/crud/edit-hskill/edit-hskill.component';
 import { CreateHskillComponent } from './components/crud/create-hskill/create-hskill.component';
+import { LoginComponent } from './components/auth/login.component';
+import { RegisterComponent } from './components/auth/register.component';
+import { IndexComponent } from './components/index/index.component';
+import { interceptorProvider } from './services/interceptor.service';
 
 
 
@@ -58,7 +62,10 @@ import { CreateHskillComponent } from './components/crud/create-hskill/create-hs
     EditUserComponent,
     PortfolioComponent,
     EditHskillComponent,
-    CreateHskillComponent
+    CreateHskillComponent,
+    LoginComponent,
+    RegisterComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -67,8 +74,9 @@ import { CreateHskillComponent } from './components/crud/create-hskill/create-hs
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

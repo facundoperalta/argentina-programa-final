@@ -43,7 +43,7 @@ export class EditHskillComponent implements OnInit {
         this.toastr.success('Experiencia Actualizada', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/']);
+        this.router.navigate(['/portfolio']);
       },
       /*err => {
         this.toastr.error('Ha ocurrido un error', 'Fail', {

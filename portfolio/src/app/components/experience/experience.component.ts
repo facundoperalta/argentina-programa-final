@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Experience } from 'src/app/models/experience';
 import { ExperienceService } from 'src/app/services/experience.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-experience',
@@ -11,11 +12,19 @@ import { ExperienceService } from 'src/app/services/experience.service';
 export class ExperienceComponent implements OnInit {
 
   public experiences: Experience[]=[];
+  roles: string[];
+  isAdmin = false;
 
-  constructor(private experienceService:ExperienceService, private toastr: ToastrService) { }
+  constructor(private experienceService:ExperienceService, private toastr: ToastrService, private tokenService: TokenService) { }
 
   ngOnInit(): void {
     this.getExperiences();
+    this.roles = this.tokenService.getAuthorities();
+    this.roles.forEach(role => {
+      if (role === 'ROLE_ADMIN') {
+        this.isAdmin = true;
+      }
+    })
   }
 
   public getExperiences():void{

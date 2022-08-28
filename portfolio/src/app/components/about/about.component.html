@@ -6,7 +6,7 @@
             <div class="card border-secondary text-secondary">
                 <div class="card-header">
                     <h2 class="text-center">Acerca de mi
-                        <button class="btn btn-outline-secondary btn-sm ms-5" routerLink="/edit/user/{{person.id}}"><i class="bi bi-pencil"></i>Editar</button>
+                        <button class="btn btn-outline-secondary btn-sm ms-5" routerLink="/edit/user/{{person.id}}" *ngIf="isAdmin"><i class="bi bi-pencil"></i>Editar</button>
                     </h2>
                       
                 </div>

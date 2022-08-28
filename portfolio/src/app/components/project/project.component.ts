@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Projects } from 'src/app/models/projects';
 import { ProjectsService } from 'src/app/services/projects.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-project',
@@ -11,11 +12,19 @@ import { ProjectsService } from 'src/app/services/projects.service';
 export class ProjectComponent implements OnInit {
 
   public projects: Projects[]=[];
+  roles: string[];
+  isAdmin = false;
 
-  constructor(private projectsService:ProjectsService, private toastr: ToastrService) { }
+  constructor(private projectsService:ProjectsService, private toastr: ToastrService, private tokenService: TokenService) { }
 
   ngOnInit(): void {
     this.getProjects();
+    this.roles = this.tokenService.getAuthorities();
+    this.roles.forEach(role => {
+      if (role === 'ROLE_ADMIN') {
+        this.isAdmin = true;
+      }
+    })
   }
 
   public getProjects():void {

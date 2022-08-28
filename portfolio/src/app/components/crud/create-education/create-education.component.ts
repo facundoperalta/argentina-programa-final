@@ -29,7 +29,7 @@ export class CreateEducationComponent implements OnInit {
         this.toastr.success('Educación creada', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/portfolio'])
       },
       err => {
         this.toastr.error('ocurrió un error', 'Error', {

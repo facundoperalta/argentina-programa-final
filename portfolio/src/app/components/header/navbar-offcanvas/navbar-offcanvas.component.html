@@ -14,20 +14,20 @@
       <div class="offcanvas-body bg-dark p-4 pt-0 p-lg-0">
         <hr class="d-lg-none text-white-50">
         <ul class="navbar-nav justify-content-right flex-grow-1 pe-3 flex-row flex-wrap">
-          <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link" href="#acerca">Acerca</a>
+          <li class="nav-item col-6 col-lg-auto" *ngIf="isLogged">
+            <a class="nav-link" href="/portfolio#acerca">Acerca</a>
           </li>
-          <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link" href="#experiencia">Experiencia</a>
+          <li class="nav-item col-6 col-lg-auto" *ngIf="isLogged">
+            <a class="nav-link" href="/portfolio#experiencia">Experiencia</a>
           </li>
-          <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link" href="#education">Educación</a>
+          <li class="nav-item col-6 col-lg-auto" *ngIf="isLogged">
+            <a class="nav-link" href="/portfolio#education">Educación</a>
           </li>
-          <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link" href="#habilidades">Habilidades</a>
+          <li class="nav-item col-6 col-lg-auto" *ngIf="isLogged">
+            <a class="nav-link" href="/portfolio#habilidades">Habilidades</a>
           </li>
-          <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+          <li class="nav-item col-6 col-lg-auto" *ngIf="isLogged">
+            <a class="nav-link" href="/portfolio#proyectos">Proyectos</a>
           </li>
         </ul>
         <hr class="d-lg-none text-white-50">
@@ -81,9 +81,13 @@
             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
             <hr class="d-lg-none text-white-50">
           </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-success">Log in</button>
+          <li class="nav-item" *ngIf="!isLogged">
+            <a class="btn btn-outline-success mx-2" routerLink="/login" role="button">Log in <i class="bi bi-box-arrow-in-right"></i></a>
           </li>
+          <li class="nav-item" *ngIf="isLogged" (click)="onLogOut()">
+            <a class="btn btn-outline-danger mx-2" role="button">Log out <i class="bi bi-box-arrow-right"></i></a>
+          </li>
+
         </ul>
       </div>
     </div>
