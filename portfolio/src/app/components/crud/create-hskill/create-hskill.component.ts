@@ -36,5 +36,4 @@ export class CreateHskillComponent implements OnInit {
     );
   }
 
-
 }

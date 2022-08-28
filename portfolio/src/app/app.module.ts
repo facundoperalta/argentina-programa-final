@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { NavbarTogglerComponent } from './components/header/navbar-toggler/navbar-toggler.component';
 import { NavbarOffcanvasComponent } from './components/header/navbar-offcanvas/navbar-offcanvas.component';
 import { BannerComponent } from './components/header/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
@@ -42,7 +41,6 @@ import { interceptorProvider } from './services/interceptor.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavbarTogglerComponent,
     NavbarOffcanvasComponent,
     BannerComponent,
     AboutComponent,

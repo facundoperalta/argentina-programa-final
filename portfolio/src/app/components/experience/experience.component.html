@@ -1,27 +1,9 @@
 <section id="experiencia">
     <div class="container mt-2 pt-3">
         <h2 class="mt-5 mb-3 pt-5 text-center text-muted">Experiencia laboral
-            <button type="button" class="btn btn-outline-secondary btn-sm ms-5" routerLink="/new/experience" *ngIf="isAdmin"><i class="bi bi-plus-circle"></i> Añadir</button>
+            <button type="button" class="btn btn-outline-secondary btn-sm ms-5" routerLink="/new/experience"
+                *ngIf="isAdmin"><i class="bi bi-plus-circle"></i> Añadir</button>
         </h2>
-
-        <!-- Modal 
-        <div class="modal fade" id="addExperience" tabindex="-1" aria-labelledby="addExperience" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="addExperience">Agregar Experiencia</h5>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm">Confirmar</button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm"
-                            data-bs-dismiss="modal">Cancelar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <div *ngFor="let experience of experiences;">
             <div class="row">
@@ -39,73 +21,14 @@
                     <ng-template #elseBlock>{{experience.finished}}</ng-template>
                     <p class="fs-5 text-center">{{experience.description}}</p>
                     <div class="d-flex justify-content-center mb-2">
-                        <button type="button" class="btn btn-outline-dark btn-sm" routerLink="/edit/experience/{{experience.id}}"*ngIf="isAdmin"><i class="bi bi-pencil"></i>Editar</button>
-                        <button type="button" class="btn btn-outline-danger btn-sm ms-2"
-                            (click)="delete(experience.id)" *ngIf="isAdmin"><i class="bi bi-trash3"></i> Eliminar</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm"
+                            routerLink="/edit/experience/{{experience.id}}" *ngIf="isAdmin"><i
+                                class="bi bi-pencil"></i>Editar</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm ms-2" (click)="delete(experience.id)"
+                            *ngIf="isAdmin"><i class="bi bi-trash3"></i> Eliminar</button>
                     </div>
-
-                    <!-- Modal Editar
-                    <div class="modal fade" id="editExperience" tabindex="-1" aria-labelledby="editExperience"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="editExperience" *ngIf="isAdmin">Editar Experiencia</h5>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-success btn-sm">Confirmar</button>
-                                    <button type="button" class="btn btn-outline-secondary btn-sm"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-
                 </div>
             </div>
-
-
         </div>
-
-
-        <!-- 
-        <div class="row">
-            <div class="col-12 col-lg-3 bg-light bg-gradient text-center pt-2 mb-lg-2 border border-5 border-warning"><h4 class="text-warning">Traductor Público</h4>
-                <div class="cuadro pb-2"><img src="../../../assets/logo colegio traductores.jpg" alt="" class="border border-warning"></div>
-            </div>
-            <div class="col-12 col-lg-9 bg-warning bg-gradient mb-2 border border-5 border-warning">
-                <h5 class="text-center mt-2">Traductor matriculado en el Colegio de Traductores Públicos e Intérpretes de San Juan</h5>
-                <h6 class="text-center">Mayo 2013 - Actualidad</h6>
-                <p class="fs-5 text-center">Traducciones del inglés al castellano y del castellano al inglés de documentos legales de distintas índoles como partidas de nacimiento, títulos universitarios, análiticos académicos, libretas sanitarias, partidas de matrimonio, etc. que requieran ser presentadas ante reparticiones, entidades u organismos públicos.</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12 col-lg-3 bg-light bg-gradient text-center pt-2 mb-lg-2 border border-5 border-success"><h4 class="text-success">Escuela Agrotécnica Ejército Argentina</h4>
-                <div class="cuadro pb-2"><img src="../../../assets/logo agro.png" alt="" class="border border-success"></div>
-            </div>
-            <div class="col-12 col-lg-9 bg-success bg-gradient mb-2 text-white border border-5 border-success">
-                <h5 class="text-center mt-2">Profesor de Inglés - Nivel Secundario</h5>
-                <h6 class="text-center">Junio 2017 - Actualidad</h6>
-                <p class="fs-5 text-center">Docente a cargo de la materia de Lengua Extranjera Inglés en primero, segundo y tercer año de secundario y de la materia de Inglés Técnico en cuarto, quinto y sexto año de secundario con orientación agropecuaria.</p>
-            </div>
-        </div>
- 
-        <div class="row">
-            <div class="col-12 col-lg-3 bg-light bg-gradient text-center pt-2 mb-lg-2 border border-5 border-info"><h4 class="text-info">Instituto Superior Técnico de Valle Fértil</h4>
-                <div class="cuadro pb-2"><img src="../../../assets/logo istvf.jpg" alt="" class="border border-info"></div>
-            </div>
-            <div class="col-12 col-lg-9 bg-info bg-gradient mb-2 border border-5 border-info">
-                <h5 class="text-center mt-2">Profesor de Inglés - Nivel Terciario</h5>
-                <h6 class="text-center">Junio 2018 - Actualidad</h6>
-                <p class="fs-5 text-center">Docente a cargo de la materia Inglés Técnico en la Tecnicatura en Gestión de la Producción Agropecuaria y Agroindustrial.</p>
-            </div>
-        </div>
-         -->
-
     </div>
 </section>
