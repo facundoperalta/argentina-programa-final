@@ -62,3 +62,6 @@ Proyecto Integrador Portfolio Web Full Stack #YoProgramo
  22 al 27 de agosto
  - Login JWT. Siguiendo un video tutorial del canal Luigi Code. El login quedó con dos roles, un usuario con rol de usuario para poder visualizar el contenido del portfolio; y un segundo rol de administrador que es quien puede editar el portfolio. Están el código para crear un nuevo usuario pero no está implementado en el frontend.
  - Correción y limpieza del código. La aplicación funciona de manera local. Todo listo para comenzar el deploy.
+ 
+ 28 y 29 de agosto
+ - Deploy: base de datos en Clever Cloud, Backend en Heroku y Frontend en Firebase. Carga de base de datos de Clever Cloud.
