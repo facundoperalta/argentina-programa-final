@@ -7,7 +7,9 @@ import { SoftSkills } from '../models/soft-skills';
   providedIn: 'root'
 })
 export class SoftSkillsService {
-  URL = 'http://localhost:8080/api/softskills/';
+  
+  URL = 'https://portfolio-backend-arg.herokuapp.com/api/softskills/';
+//  URL = 'http://localhost:8080/api/softskills/';
 
   constructor(private http: HttpClient) { }
 

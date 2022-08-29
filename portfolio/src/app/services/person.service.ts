@@ -7,7 +7,9 @@ import { Person } from '../models/person';
   providedIn: 'root'
 })
 export class PersonService {
-  URL = 'http://localhost:8080/api/person/';
+  
+  URL = 'https://portfolio-backend-arg.herokuapp.com/api/person/';
+//  URL = 'http://localhost:8080/api/person/';
 
   constructor(private http: HttpClient) { }
 
