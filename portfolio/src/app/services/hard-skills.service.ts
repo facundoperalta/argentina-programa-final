@@ -8,8 +8,8 @@ import { HardSkills } from '../models/hard-skills';
 })
 export class HardSkillsService {
 
-  URL = 'https://portfolio-backend-arg.herokuapp.com/api/hardskills/';
-//  URL = 'http://localhost:8080/api/hardskills/';
+//  URL = 'https://portfolio-backend-arg.herokuapp.com/api/hardskills/';
+ URL = 'http://localhost:8080/api/hardskills/';
 
   constructor(private http: HttpClient) { }
 

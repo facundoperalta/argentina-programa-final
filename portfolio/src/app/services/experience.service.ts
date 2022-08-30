@@ -8,8 +8,8 @@ import { Experience } from '../models/experience';
 })
 export class ExperienceService {
   
-  URL = 'https://portfolio-backend-arg.herokuapp.com/api/experience/';
-//  URL = 'http://localhost:8080/api/experience/';
+//  URL = 'https://portfolio-backend-arg.herokuapp.com/api/experience/';
+ URL = 'http://localhost:8080/api/experience/';
 
   constructor(private http: HttpClient) { }
 

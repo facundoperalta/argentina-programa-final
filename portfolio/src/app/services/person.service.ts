@@ -8,8 +8,8 @@ import { Person } from '../models/person';
 })
 export class PersonService {
   
-  URL = 'https://portfolio-backend-arg.herokuapp.com/api/person/';
-//  URL = 'http://localhost:8080/api/person/';
+//  URL = 'https://portfolio-backend-arg.herokuapp.com/api/person/';
+  URL = 'http://localhost:8080/api/person/';
 
   constructor(private http: HttpClient) { }
 

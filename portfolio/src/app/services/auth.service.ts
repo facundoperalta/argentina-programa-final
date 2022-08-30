@@ -11,8 +11,8 @@ import { NewUser } from '../models/new-user';
 })
 export class AuthService {
 
-  uri = 'https://portfolio-backend-arg.herokuapp.com/auth/';
-  //uri = 'http://localhost:8080/auth/';
+  //uri = 'https://portfolio-backend-arg.herokuapp.com/auth/';
+  uri = 'http://localhost:8080/auth/';
   
   constructor(private httpClient: HttpClient) { }
 
